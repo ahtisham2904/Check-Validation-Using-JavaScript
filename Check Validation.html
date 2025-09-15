@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <title>Check Validation</title>
+</head>
+
+<body class="bg-[#dfe0e2]">
+
+    <!-- Log In -->
+    <div id="Log In" class="w-[100%] flex flex-col justify-center items-center">
+        <div class="max-[450px]:w-[90%] w-[400px] mt-[60px] py-10 px-2 rounded-xl flex flex-col gap-4 justify-center items-center bg-white">
+            <h1 class="text-6xl font-bold text-[#5045E6]">Log In</h1>
+            <form for="submit" id="loginForm" class="flex flex-col p-4 w-[90%]">
+                <label >Email</label>
+                <input class="border border-black rounded-md px-2 py-1 mb-2" type="text" name="email" id="loginEmail" placeholder="Enter email">
+                <label>Password</label>
+                <input class="border border-black rounded-md px-2 py-1 mb-2" type="password" name="password" id="loginPassword" placeholder="Enter password">
+                <button class="w-[100%] text-white py-2 bg-[#5045E6] rounded-md">Log In</button>
+            </form>
+            <h2>Don't have an account ! <button id="goSignUpBtn" class="text-[#5045E6] underline">Sign Up</button></h2>
+        </div>
+    </div>
+    <!-- Sign Up -->
+    <div id="Sign Up" class="w-[100%] flex flex-col justify-center items-center hidden">
+        <div class="max-[450px]:w-[90%] w-[400px] mt-[60px] py-10 px-2 rounded-xl flex flex-col gap-4 justify-center items-center bg-white">
+            <h1 class="text-6xl font-bold text-[#5045E6]">Sign Up</h1>
+            <form for="submit" id="signupForm" class="flex flex-col p-4 w-[90%]">
+                <label >Email</label>
+                <input class="border border-black rounded-md px-2 py-1 mb-2" type="text" name="email" id="signupEmail" placeholder="Enter email">
+                <label>Password</label>
+                <input class="border border-black rounded-md px-2 py-1 mb-2" type="password" name="password" id="signupPassword" placeholder="Enter password">
+                <label> Re-enter Password</label>
+                <input class="border border-black rounded-md px-2 py-1 mb-2" type="password" name="re-password" id="signupRePassword" placeholder="Enter password">
+                <button class="w-[100%] text-white py-2 bg-[#5045E6] rounded-md">Sign Up</button>
+            </form>
+            <h2>Already have an account !<button id="LogIn" class="text-[#5045E6] underline">Log In</button></h2>
+        </div>
+    </div>
+
+    
+    <script src="Sign Up.js"></script>
+</body>
+</html>
